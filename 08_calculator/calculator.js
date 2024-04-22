@@ -22,8 +22,9 @@ const multiply = function(numbers) {
   return productOfAllNums;
 };
 
-const power = function() {
-	
+const power = function(num1, num2) {
+	let exponent = num1**num2;
+  return exponent;
 };
 
 const factorial = function() {
