@@ -13,11 +13,13 @@ const sum = function(numbers) {
     return total + currentItem;
   }, 0);
   return sumOfAllNums;
-
   };
 
-const multiply = function() {
-
+const multiply = function(numbers) {
+  const productOfAllNums = numbers.reduce((total, currentItem) => {
+    return total * currentItem;
+  }, 1);
+  return productOfAllNums;
 };
 
 const power = function() {
