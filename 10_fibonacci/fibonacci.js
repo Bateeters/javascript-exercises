@@ -1,12 +1,14 @@
 const fibonacci = function(number) {
 
     const fibArr = [1]; // initial array starting with 1
+    let input = Number(number);
+    console.log(typeof input);
 
-    if(number > 0){ // check if given number is greater than 1
+    if(input > 0){ // check if given number is greater than 1
         let i = 1;
         let start = 1;
 
-        while(fibArr.length < number-1){
+        while(fibArr.length < input-1){
             fibArr[i]=start;
             // console.log(fibArr);
 
@@ -27,7 +29,7 @@ const fibonacci = function(number) {
 
         // console.log(fib1+fib2);
         return fib1+fib2;
-    } else if (number<0){
+    } else if (input<0){
         return "OOPS";
     } else {
         return 0;
