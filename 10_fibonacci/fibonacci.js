@@ -2,7 +2,7 @@ const fibonacci = function(number) {
 
     const fibArr = [1]; // initial array starting with 1
 
-    if(number >= 0){ // check if given number is greater than 1
+    if(number > 0){ // check if given number is greater than 1
         let i = 1;
         let start = 1;
 
@@ -19,16 +19,19 @@ const fibonacci = function(number) {
             // console.log(start, fibArr);
             i++;
         }
+
+        let fib1 = Number(fibArr.slice(-1));
+        fibArr.pop();
+
+        let fib2 = Number(fibArr.slice(-1));
+
+        // console.log(fib1+fib2);
+        return fib1+fib2;
+    } else {
+        return 0;
     }
 
 
-    let fib1 = Number(fibArr.slice(-1));
-    fibArr.pop();
-
-    let fib2 = Number(fibArr.slice(-1));
-
-    // console.log(fib1+fib2);
-    return fib1+fib2;
 };
 
 // Do not edit below this line
