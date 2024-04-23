@@ -27,6 +27,8 @@ const fibonacci = function(number) {
 
         // console.log(fib1+fib2);
         return fib1+fib2;
+    } else if (number<0){
+        return "OOPS";
     } else {
         return 0;
     }
