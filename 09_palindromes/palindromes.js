@@ -12,10 +12,9 @@ const palindromes = function (input) {
     // splits "filteredString" into an array, reverses it, and rejoins it to a string
     const reversed = filteredString
         .split('')
-        .reverse()
+        .reverse() // .reverse() only works with arrays which is why we need to .split('') and .join('') before and after
         .join('');
 
-    console.log(filteredString, reversed);
     return filteredString === reversed; // check to see if both strings are the same
 };
 
