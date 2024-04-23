@@ -27,8 +27,13 @@ const power = function(num1, num2) {
   return exponent;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	let product = 1;
+  while (number > 0){
+    product = product*number;
+    number --;
+  }
+  return product;
 };
 
 // Do not edit below this line
